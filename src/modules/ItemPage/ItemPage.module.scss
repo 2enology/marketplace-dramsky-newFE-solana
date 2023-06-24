@@ -1,0 +1,17 @@
+.item-page {
+  @media (min-width: 1024px) {
+    padding-top: 60px;
+  }
+
+  margin-bottom: 200px;
+
+  .tab-container {
+    margin-bottom: 24px;
+    margin-top: 32px;
+
+    @media (min-width: 1024px) {
+      margin-top: 88px;
+
+    }
+  }
+}

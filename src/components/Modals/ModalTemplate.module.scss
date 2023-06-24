@@ -1,0 +1,95 @@
+.modal-template {
+
+  @media (max-width: 769px) {
+    background: #0D0D0D;
+    height: 100%;
+  }
+
+  &.full-height {
+    height: 100%;
+
+    .modal-body {
+      height: calc(100% - 128px);
+      overflow: auto;
+    }
+  }
+
+  .modal-header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #393837;
+
+    @media (max-width: 769px) {
+      justify-content: center;
+      background: #141414;
+      border-bottom: 0;
+
+    }
+
+
+    .back-btn {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      height: 18px;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+    }
+
+    .modal-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .modal-body {
+    padding: 32px 20px;
+
+    @media (max-width: 769px) {
+      padding: 20px;
+      height: calc(100% - 128px);
+      overflow: auto;
+    }
+  }
+
+  .modal-footer {
+    padding: 12px 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    background: #1F1F1F;
+
+    &.btn-full-width {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    @media (min-width: 768px) {
+      border-top: 1px solid #393837;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+    }
+  }
+}

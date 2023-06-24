@@ -1,0 +1,15 @@
+.product-page {
+  @media (min-width: 1024px) {
+    padding-top: 60px;
+  }
+
+  margin-bottom: 200px;
+}
+
+
+.collection-float-bar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}

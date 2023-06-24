@@ -1,0 +1,72 @@
+.price-range-select {
+  position: relative;
+  display: inline-block;
+
+  .select {
+    padding: 0 16px;
+    align-items: center;
+    border: 1px solid #4E4D4B;
+    background: rgba(13, 13, 13, 0.2);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: all .2s;
+    height: 42px;
+
+    &:hover, &.open {
+      background: #1F1F1F;
+      border: 1px solid #F9E0A8;
+      color: #F9E0A8;
+    }
+
+
+    &.open {
+      & > svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    & > svg {
+      margin-left: 16px;
+      transition: transform .2s;
+    }
+  }
+
+  .popup {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 0;
+    background: #141414;
+    padding: 14px 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    width: 375px;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all .2s;
+    pointer-events: none;
+    box-shadow: 0px 4px 35px 7px rgba(31, 31, 31, 0.2);
+    z-index: 2;
+
+
+    &.open {
+      opacity: 1;
+      transform: translateY(0%);
+      pointer-events: initial;
+    }
+
+    .item {
+      .label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

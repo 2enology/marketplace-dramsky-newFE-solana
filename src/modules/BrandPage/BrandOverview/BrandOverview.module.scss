@@ -1,0 +1,163 @@
+@import "styles/common/colors";
+
+.brand-overview {
+  padding-bottom: 48px;
+
+  @media (min-width: 1024px) {
+    padding-bottom: 120px;
+
+  }
+
+  .brand-wrapper {
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .image-container {
+      flex: 0 0 50%;
+      position: relative;
+      margin-bottom: 24px;
+
+      @media (min-width: 1024px) {
+        margin-bottom: 0;
+
+      }
+
+
+      & > img {
+        width: 100%;
+        object-fit: cover;
+        height: 335px;
+
+        @media (min-width: 768px) {
+          height: 503px;
+
+        }
+
+      }
+
+      .overlay {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        height: 171px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .image-text {
+        width: calc(100% - 36px);
+        left: 18px;
+        bottom: 24px;
+        position: absolute;
+        background: rgba(13, 13, 13, 0.5);
+        backdrop-filter: blur(2px);
+        padding: 14px;
+
+        .special-featured {
+          background: $green-linear;
+          padding: 5px 12px;
+          color: #FFFFFF;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 18px;
+          display: inline-block;
+        }
+
+        .p-title {
+          margin-top: 16px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .p-brand {
+          margin-top: 4px;
+          color: #F9E0A8;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .brand-details {
+      .brand-name {
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        margin-bottom: 6px;
+        font-size: 40px;
+        line-height: 48px;
+
+        @media (min-width: 1024px) {
+          font-size: 48px;
+          line-height: 64px;
+
+        }
+      }
+
+      .brand-desc {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+
+
+        @media (min-width: 1024px) {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 24px;
+
+        }
+      }
+
+      .view-collection {
+        width: 100%;
+
+        @media (min-width: 1024px) {
+          width: auto;
+        }
+      }
+
+      .wallet-address {
+        margin-top: 64px;
+        background: #222120;
+        border-left: 2px solid #F9E0A8;
+        padding: 20px;
+
+        .w-title {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 6px;
+        }
+
+        .address {
+          color: #A5F56F;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          & > div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          & > svg {
+            margin-left: 14px;
+            flex: 0 0 24px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.collection-offers-view {
+  td {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      margin-right: 6px;
+    }
+  }
+
+  .eligible {
+    background: rgba(118, 209, 57, 0.08);
+    border-radius: 100px;
+    padding: 4px 14px;
+    display: inline-flex;
+    align-items: center;
+    color: #7FC936;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #7FC936;
+      margin-right: 11px;
+    }
+  }
+
+  .sell-btn {
+    height: 32px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .not-eligible {
+    color: #7F7D7A;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

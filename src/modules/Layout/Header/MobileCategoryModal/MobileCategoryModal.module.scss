@@ -1,0 +1,99 @@
+@import "styles/common/mixin";
+
+.mobile-category-modal {
+  height: 100%;
+  overflow: hidden;
+
+  .modal-header {
+    height: 58px;
+    display: flex;
+    justify-content: right;
+    background: #141414;
+    padding: 0 20px;
+
+    .close-btn {
+      background: transparent;
+      color: white;
+    }
+  }
+
+  .modal-body {
+    max-height: calc(100% - 130px);
+    background: #141414;
+    overflow: auto;
+    padding: 0 20px;
+
+    .cate {
+      .cat-title {
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+
+        &.open {
+          & > span {
+            color: #F9E0A8;
+
+            &::after {
+              background: #F9E0A8;
+            }
+          }
+
+          & > svg {
+            transform: rotate(180deg);
+          }
+        }
+
+        & > span {
+          position: relative;
+          transition: color .2s;
+          color: white;
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: white;
+            bottom: -1px;
+            left: 0;
+            transition: background-color .2s;
+
+          }
+        }
+
+        & > svg {
+          margin-left: auto;
+          transition: transform .2s;
+        }
+      }
+
+      .cat-list {
+        padding: 16px 0;
+
+        .cat-item {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 20px;
+          cursor: pointer;
+
+          & > a {
+            @include a-with-green-gradient;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    padding: 16px 20px;
+    background: #141414;
+  }
+}

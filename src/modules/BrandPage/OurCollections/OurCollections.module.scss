@@ -1,0 +1,106 @@
+@import "styles/common/colors";
+
+.our-collections-wrapper {
+  padding-bottom: 197px;
+
+
+  .our-collections {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 42px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .collections-list {
+    display: grid;
+    grid-auto-rows: 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .collection {
+      background: #0D0D0D;
+      border: 1px solid #393837;
+      position: relative;
+
+      .c-avatar {
+        width: 64px;
+        height: 64px;
+        border: 1px solid;
+        border-image-source: $golden-linear;
+        border-image-slice: 1;
+        position: absolute;
+        top: 108px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .c-banner {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .c-details {
+        padding: 16px;
+
+        .c-name {
+          margin-top: 32px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          margin-bottom: 14px;
+        }
+
+        .c-stats {
+          display: grid;
+          grid-auto-rows: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 14px;
+
+          .stat-box {
+            background: #141414;
+            padding: 8px;
+            text-align: center;
+
+            .s-name {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+            }
+
+            .s-value {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}

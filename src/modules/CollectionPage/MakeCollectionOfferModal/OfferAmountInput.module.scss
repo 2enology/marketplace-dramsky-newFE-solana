@@ -1,0 +1,42 @@
+.offer-amount-input {
+  .label {
+    color: #B9B8B6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .input-wrapper {
+    position: relative;
+
+    .select {
+      position: absolute;
+      z-index: 2;
+      width: 120px;
+      left: 0;
+      top: 0;
+
+      .select-value {
+        border: 1px solid transparent !important;
+        background: rgba(46, 46, 46, 0.12) !important;
+        border-right: 1px solid #7F7D7A !important;
+
+        &.focusing {
+          border-right: 1px solid #F9E0A8 !important;
+
+        }
+      }
+
+      .popup {
+        top: 100% !important;
+      }
+    }
+
+    .input {
+      & > input {
+        padding-left: 125px;
+      }
+    }
+  }
+}

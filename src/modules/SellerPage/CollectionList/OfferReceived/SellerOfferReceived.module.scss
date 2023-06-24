@@ -1,0 +1,36 @@
+.seller-offer-received {
+  .name {
+    display: flex;
+    align-items: center;
+
+    .offer-image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      flex: 0 0 40px;
+      margin-right: 14px;
+    }
+
+    .offer-details {
+      .name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .id {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .from {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+
+}

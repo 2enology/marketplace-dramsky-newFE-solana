@@ -1,0 +1,165 @@
+@import "styles/common/mixin";
+
+.app-footer {
+  background: #141414;
+  position: relative;
+  padding: 32px 0;
+  overflow: hidden;
+
+  .circle {
+    background: radial-gradient(50% 50% at 50% 50%, #48995C 0%, rgba(31, 31, 31, 0) 100%);
+    width: 400px;
+    height: 400px;
+    opacity: 0.08;
+    filter: blur(14px);
+    pointer-events: none;
+    z-index: 2;
+    position: absolute;
+    top: -200px;
+    left: -62px;
+  }
+
+  .bottom-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(50% 50% at 50% 50%, #E8B98E 0%, rgba(31, 31, 31, 0) 100%);
+    opacity: 0.1;
+    filter: blur(14px);
+    z-index: 2;
+    pointer-events: none;
+    bottom: -200px;
+    right: -200px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 80px 0;
+
+  }
+
+  .app-container {
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .logo-section {
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 32px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      .app-description {
+        margin-top: 16px;
+
+        @media (min-width: 768px) {
+          max-width: 250px;
+
+        }
+      }
+
+      .follow-us {
+        margin-top: 24px;
+
+        @media (min-width: 768px) {
+          margin-top: 48px;
+
+        }
+
+        .social-icons {
+          margin-top: 14px;
+          display: flex;
+          align-items: center;
+
+          svg {
+            &:first-child {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .right-section {
+      margin-left: auto;
+      display: flex;
+
+      .footer-section {
+        .section-title {
+          color: #F9E0A8;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 16px;
+        }
+
+        .item-wrapper {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 40px;
+
+          .item {
+            @include a-with-green-gradient;
+          }
+        }
+
+
+      }
+
+      .marketplace {
+        margin-right: 98px;
+      }
+    }
+  }
+}
+
+.app-version {
+  background: #0D0D0D;
+  padding: 14px 0;
+
+  .terms-container {
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: flex-end;
+    }
+
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    .faqs {
+      a {
+        @include a-with-green-gradient;
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+     @media (min-width: 768px) {
+       border-right: 1px solid #7F7D7A;
+       margin-right: 16px;
+     }
+    }
+
+    .dramsky-copyright {
+      color: #B9B8B6;
+      opacity: 0.72;
+      margin-bottom: 8px;
+
+      @media (min-width: 768px) {
+          margin-bottom: 0;
+      }
+    }
+  }
+
+
+}

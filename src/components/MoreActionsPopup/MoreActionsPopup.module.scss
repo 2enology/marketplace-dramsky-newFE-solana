@@ -1,0 +1,42 @@
+.more-action-popup {
+  padding: 20px;
+  border-radius: 2px 2px 0px 0px;
+
+  .modal-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .close-btn {
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    .action {
+      background: #2A2928;
+      text-align: center;
+      padding: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      border: 1px solid #2A2928;
+      transition: all .2s;
+      cursor: pointer;
+
+      &:hover {
+        border-color: white;
+        filter: brightness(120%);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

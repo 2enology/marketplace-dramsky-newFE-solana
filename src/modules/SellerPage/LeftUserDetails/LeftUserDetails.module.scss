@@ -1,0 +1,180 @@
+.left-user-details {
+  padding-top: 326px;
+  position: relative;
+
+  .seller-info-box {
+    position: absolute;
+    width: 100%;
+    top: -160px;
+    background: #1F1F1F;
+    padding: 40px 16px 16px 16px;
+    text-align: center;
+
+    .seller-avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.04);
+      margin-bottom: 16px;
+      border-radius: 50%;
+    }
+
+    .seller-name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .collections {
+    @mixin collection-box {
+      border: 1px solid #393837;
+      background: #0D0D0D;
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      transition: all .2s;
+      cursor: pointer;
+
+      &:hover {
+        &:not(.active) {
+          filter: brightness(150%);
+        }
+      }
+
+      &.active {
+        background: #1F1F1F;
+        border: 1px solid #F9E0A8;
+        color: #F9E0A8;
+      }
+
+      .icon, & > img {
+        width: 44px;
+        height: 44px;
+        background: #242424;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        flex: 0 0 44px;
+
+        & > svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .col-name {
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+
+
+        & > div {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        & > span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #7F7D7A;
+          padding-left: 8px;
+        }
+      }
+    }
+
+    .all-collections {
+      @include collection-box;
+      margin-bottom: 24px;
+    }
+
+    .collection-list {
+      border-top: 1px dashed #393837;
+      padding-top: 24px;
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+      }
+
+      .collection {
+        @include collection-box;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+
+.seller-stats {
+  text-align: left;
+
+  .wallet-box {
+    background: #242424;
+    border-radius: 2px;
+    padding: 12px 40px 12px 12px;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, #B89B5A00, #F9E0A829);
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    & > svg {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .items-stats {
+
+    @media (max-width: 1023px) {
+      padding-top: 24px;
+      border-top: 1px dashed #393837;
+      margin-bottom: 32px;
+    }
+
+    .box {
+      border-left: 2px solid #B39054;
+      background: #242424;
+      margin-bottom: 12px;
+      padding: 12px;
+      color: #E1E1E0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .value {
+        color: #3B8E23;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: auto;
+      }
+    }
+  }
+}

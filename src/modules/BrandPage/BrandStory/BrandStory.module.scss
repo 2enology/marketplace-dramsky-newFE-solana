@@ -1,0 +1,92 @@
+.brand-story {
+  position: relative;
+  padding-bottom: 56px;
+
+
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 136px;
+
+  }
+
+  .image-content {
+    flex: 0 0 50%;
+
+    @media (min-width: 1024px) {
+      padding-right: 65px;
+
+    }
+
+    & > img {
+      width: 100%;
+      object-fit: cover;
+
+      @media (min-width: 768px) {
+        height: 608px;
+
+      }
+    }
+  }
+
+  .story {
+    flex: 0 0 50%;
+
+    @media (min-width: 1024px) {
+      padding-left: 65px;
+
+    }
+
+    .story-title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      margin-bottom: 24px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .story-full {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+
+
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-flow: column;
+
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #393837;
+      border-radius: 50%;
+      transition: background-color .2s;
+      cursor: pointer;
+      margin: 8px;
+
+
+      &:hover {
+        background: darken(#FFFFFF, .8);
+      }
+
+      &.active {
+        background: #FFFFFF;
+      }
+    }
+  }
+
+}

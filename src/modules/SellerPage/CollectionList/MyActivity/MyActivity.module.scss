@@ -1,0 +1,18 @@
+.collection {
+  display: flex;
+  align-items: center;
+
+  .collection-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+  }
+
+  .name {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,151 @@
+.collection-stats {
+  display: flex;
+
+  margin-bottom: 88px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
+
+  .vol-name-section {
+    flex: 0 0 45%;
+    display: grid;
+    grid-auto-rows: 1fr;
+    column-gap: 20px;
+    border-radius: 2px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+
+
+    @media (min-width: 1024px) {
+      margin-right: 24px;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .vol-section {
+      padding: 0 14px;
+      border: 1px solid #242424;
+      border-radius: 2px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid #242424;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+        .item-title {
+          color: #B9B8B6;
+        }
+
+        .item-value {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          color: #F9E0A8;
+
+          & > svg {
+            margin-right: 6px;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.brand-name-section {
+  flex: 1;
+  border: 1px solid #242424;
+  padding: 0 14px;
+  align-self: flex-start;
+  border-radius: 2px;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .row {
+
+    @media (min-width: 1024px) {
+      display: flex;
+      border-bottom: 1px solid #242424;
+      padding-bottom: 14px;
+      padding-top: 14px;
+    }
+
+    .box {
+
+      padding-top: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #242424;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+
+      @media (min-width: 1024px) {
+        border-right: 1px solid #242424;
+        padding: 0 12px 0 24px;
+        flex: 0 0 25%;
+        display: block;
+        border-bottom: 0;
+      }
+
+
+      .box-title {
+        color: #B9B8B6;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .value {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (max-width: 1023px) {
+          margin-left: auto;
+          font-size: 14px;
+        }
+
+        &.brand-title {
+          font-family: 'Playfair Display', serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+
+      &.double-width {
+        flex: 0 0 50%;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

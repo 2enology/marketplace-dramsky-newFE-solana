@@ -1,0 +1,43 @@
+.activity-view {
+  .name-wrapper {
+    display: flex;
+    align-items: center;
+
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      flex: 0 0 40px;
+      margin-right: 14px;
+    }
+
+    .name {
+      flex: 1;
+      width: 100%;
+      overflow: auto;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .sale {
+    color: #A5F56F;
+
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      margin-right: 6px;
+    }
+  }
+
+  td {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}

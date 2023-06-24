@@ -1,0 +1,10 @@
+{
+  "extends": "next",
+  "rules": {
+    "eqeqeq": "off",
+    "no-mixed-operators": "off",
+    "react/no-find-dom-node": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "off"
+  }
+}

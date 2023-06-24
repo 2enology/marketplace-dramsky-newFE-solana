@@ -1,0 +1,79 @@
+@import "styles/common/colors";
+@import "styles/common/mixin";
+
+.header-brands {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+
+  .nav-text {
+    cursor: pointer;
+    transition: color .2s;
+
+    &.highlighted {
+      color: #F9E0A8;
+    }
+  }
+}
+
+.categories-wrapper {
+  position: absolute;
+  left: 20px;
+  width: calc(100% - 40px);
+  top: 100%;
+  background: transparent;
+  padding-top: 36px;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all .2s;
+  pointer-events: none;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: initial;
+  }
+
+  .category-box {
+    background: #141414;
+    border: 1px solid #393837;
+    box-shadow: 0px 23px 32px rgba(20, 20, 20, 0.2);
+    padding: 22px 31px;
+    display: flex;
+
+    .section {
+      flex:  0 0 50%;
+
+      &:first-child {
+        border-right: 1px solid #393837;
+        padding-right: 70px;
+      }
+
+      &:last-child {
+        padding-left: 70px;
+      }
+
+      .section-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+
+      .section-list {
+        display: flex;
+        flex-flow: row wrap;
+
+        .item {
+          flex: 0 0 50%;
+          margin-bottom: 16px;
+
+          & > a {
+            @include a-with-green-gradient;
+          }
+        }
+      }
+    }
+  }
+}

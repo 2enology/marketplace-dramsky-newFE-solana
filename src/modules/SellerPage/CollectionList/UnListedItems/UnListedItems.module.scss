@@ -1,0 +1,43 @@
+.collection-items-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+
+  .c-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .right-filter {
+
+    .desktop-action {
+      display: flex;
+      align-items: center;
+
+      .input {
+      }
+
+      .grid-icon {
+        width: 24px;
+        height: 24px;
+        color: #7F7D7A;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(150%);
+        }
+
+        &.active {
+          color: #FFFFFF;
+        }
+
+        &.has-margin {
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+}

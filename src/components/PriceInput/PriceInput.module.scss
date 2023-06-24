@@ -1,0 +1,66 @@
+.input-price-wrapper {
+
+
+  .label {
+    margin-bottom: 4px;
+    color: #B9B8B6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .input-price-body {
+    position: relative;
+
+    .select {
+      position: absolute;
+      z-index: 2;
+      width: 80px;
+      left: 0;
+      top: 0;
+
+      .select-value {
+        border: 1px solid transparent !important;
+        background: rgba(46, 46, 46, 0.12) !important;
+        border-right: 1px solid #7F7D7A !important;
+        padding: 16px 14px;
+
+        &.has-error {
+          border-color: #DD4040 !important;
+        }
+
+        & > div {
+          height: 24px;
+          margin-right: 4px;
+        }
+
+        &.focusing {
+          border-right: 1px solid #F9E0A8 !important;
+
+          &.has-error {
+            border-color: #DD4040 !important;
+          }
+        }
+      }
+
+      .popup {
+        top: 100% !important;
+      }
+    }
+
+    .input {
+      & > input {
+        padding-left: 90px;
+      }
+    }
+
+    .unit-wrapper {
+      display: flex;
+      align-items: center;
+
+      & > svg {
+        margin-right: 8px;
+      }
+    }
+  }
+}

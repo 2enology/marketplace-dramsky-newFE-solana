@@ -1,0 +1,49 @@
+.wrapper {
+
+
+  .label {
+    color: #B9B8B6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .input-quantity {
+    position: relative;
+
+    .button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+
+
+      & > svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      &.minus {
+        left: 14px;
+      }
+
+      &.plus {
+        right: 14px;
+      }
+    }
+
+    input {
+      padding-left: 56px;
+      padding-right: 56px;
+      text-align: center;
+    }
+  }
+}

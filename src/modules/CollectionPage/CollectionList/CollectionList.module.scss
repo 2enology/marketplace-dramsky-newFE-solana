@@ -1,0 +1,8 @@
+.view {
+  margin-top: 16px;
+
+  @media (min-width: 1024px) {
+    margin-top: 32px;
+
+  }
+}

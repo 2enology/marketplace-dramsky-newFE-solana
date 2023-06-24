@@ -1,0 +1,34 @@
+.loading-modal-overlay {
+  padding: 24px 32px;
+  text-align: center;
+
+  .loading-icon {
+    width: 52px;
+    height: 52px;
+    background: #393837;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+
+    & > svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+
+  .description {
+    color: #E1E1E0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

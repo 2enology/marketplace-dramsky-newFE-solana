@@ -1,0 +1,94 @@
+.make-item-offer-modal {
+  .offer-preview {
+    background: #242424;
+    border-radius: 2px;
+    padding: 16px;
+    margin-bottom: 24px;
+
+    .offer-image {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #2A2928;
+
+      .image {
+        width: 42px;
+        height: 42px;
+        background: #7F7D7A;
+        border-radius: 50%;
+        margin-right: 16px;
+        flex: 0 0 42px;
+      }
+    }
+
+    .offer-total {
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 4px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .name {
+          color: #B9B8B6;
+        }
+
+
+        .value {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+
+          &.golden {
+            color: #F9E0A8;
+          }
+
+          & > svg {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .marketplace-fee {
+
+    @media (max-width: 769px) {
+      padding-top: 16px;
+      border-top: 1px dashed #393837;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #CDCCCB;
+      margin-bottom: 18px;
+    }
+
+    .select-wrapper {
+      margin-top: 18px;
+
+      .select {
+        width: 100%;
+
+      }
+    }
+  }
+}

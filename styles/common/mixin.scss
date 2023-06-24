@@ -1,0 +1,52 @@
+@import "colors";
+
+@mixin a-with-green-gradient {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: all .2s;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -1px;
+    background: $green-linear;
+    left: 0;
+    opacity: 0;
+    transition: all .2s;
+
+  }
+
+
+  &:hover {
+    color: #7DD251;
+    background: #242424;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+
+@mixin ellipsis($lines-to-show, $font-size) {
+
+  $line-height: 1.4;
+
+  .text-display {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    max-height: ($font-size* $line-height * $lines-to-show) + px;
+    margin: 0 auto;
+    font-size: $font-size + px;
+    line-height: ($line-height);
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

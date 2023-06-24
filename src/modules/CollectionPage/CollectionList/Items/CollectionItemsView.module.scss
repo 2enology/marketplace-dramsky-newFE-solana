@@ -1,0 +1,63 @@
+.collection-items-view {
+  position: relative;
+
+  .view-type {
+    position: absolute;
+    top: -64px;
+    right: 0;
+    display: flex;
+
+    .view {
+      cursor: pointer;
+      color: #7F7D7A;
+      transition: color .2s;
+
+      &:hover {
+        color: lighten(#7F7D7A, 20%);
+      }
+
+      &.active {
+        color: white;
+      }
+
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .filter-wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    .left-filter {
+      display: flex;
+
+      .input-search {
+        width: 292px;
+        margin-right: 20px;
+      }
+    }
+
+    .right-filter {
+      display: flex;
+
+      .sort {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .filter-mobile {
+    margin-bottom: 24px;
+
+    .action-buttons {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}

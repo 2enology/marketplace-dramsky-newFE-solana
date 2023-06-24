@@ -1,0 +1,29 @@
+.home-page {
+  position: relative;
+  overflow: hidden;
+
+  .golden-circle {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(232, 185, 142, 0.16) 0%, rgba(13, 13, 13, 0) 100%);
+    filter: blur(14px);
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 200px;
+    right: -400px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .green-circle {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(165, 245, 111, 0.08) 0%, rgba(13, 13, 13, 0) 100%);
+    filter: blur(14px);
+    width: 800px;
+    height: 800px;
+    top: 944px;
+    left: -408px;
+    z-index: 2;
+    pointer-events: none;
+
+  }
+}

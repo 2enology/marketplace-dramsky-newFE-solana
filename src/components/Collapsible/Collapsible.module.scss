@@ -1,0 +1,23 @@
+.collapsible {
+  .header {
+    background: rgba(31, 31, 31, 0.72);
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F9E0A8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.open {
+      & > svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    & > svg {
+      transition: all .2s;
+    }
+  }
+}

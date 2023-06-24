@@ -1,0 +1,109 @@
+.profile-btn {
+  position: relative;
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    border: 1px solid #B9B8B6;
+    background: #1F1F1F;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+
+    &:hover, &.open {
+      background: #1F1F1F;
+      border: 1px solid #F9E0A8;
+      color: #F9E0A8;
+    }
+
+    &.open {
+      & > svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    .user-icon {
+      width: 24px;
+      height: 24px;
+      background: #393837;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+
+      & > svg {
+        width: 16px;
+        height: 16px;
+        transition: transform .2s;
+      }
+    }
+
+    .username {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 8px;
+    }
+
+
+  }
+
+  .popup {
+    position: absolute;
+    top: calc(100% + 16px);
+    right: 0;
+    box-shadow: 0px 4px 35px 7px rgba(31, 31, 31, 0.2);
+    border: 1px solid #4E4D4B;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all .2s;
+    pointer-events: none;
+    min-width: 100%;
+
+
+    &.open {
+      opacity: 1;
+      transform: translateY(0%);
+      pointer-events: initial;
+    }
+
+    .select-item {
+      padding: 12px 80px 12px 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      white-space: nowrap;
+      cursor: pointer;
+      background: #141414;
+      transition: all .2s;
+
+
+      &:hover {
+        background: lighten(#141414, 10%);
+      }
+
+      .checkbox {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .my-balance {
+    display: flex;
+    align-items: center;
+
+    .balance {
+      margin-left: 5px;
+    }
+  }
+}

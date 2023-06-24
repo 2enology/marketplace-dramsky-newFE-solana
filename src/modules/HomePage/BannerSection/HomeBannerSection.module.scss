@@ -1,0 +1,61 @@
+@import "styles/common/colors";
+
+.home-banner-section {
+  width: 100%;
+  text-align: center;
+  background: url(/img/home/banner-image.png) no-repeat center center;
+  background-size: cover;
+  padding: 50px 20px 104px 20px;
+  position: relative;
+  z-index: 4;
+
+  @media (min-width: 768px) {
+    padding: 159px 0;
+  }
+
+
+  .banner-heading {
+    max-width: 590px;
+    margin: 0 auto 18px;
+
+    & > span {
+      background: $golden-linear;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 56px;
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+        line-height: 64px;
+      }
+    }
+  }
+
+  .banner-desc {
+    font-style: normal;
+    font-weight: 400;
+    max-width: 590px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+
+    & > button {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

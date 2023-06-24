@@ -1,0 +1,244 @@
+.make-collection-offer-modal {
+
+  @media (max-width: 769px) {
+    background: #0D0D0D;
+    height: 100%;
+  }
+
+  .modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #4E4D4B;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 769px) {
+      justify-content: center;
+    }
+
+
+    .back-btn {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+    }
+
+    .modal-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .progress-bar {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, #B89B5A 0%, #F9E0A8 100%);
+      bottom: 0;
+      left: 0;
+      transition: all .2s;
+    }
+  }
+
+  .modal-body {
+    padding: 32px 20px;
+
+    @media (max-width: 769px) {
+      padding: 20px;
+      height: calc(100% - 128px);
+      overflow: auto;
+    }
+
+    .offer-preview {
+      background: #242424;
+      border-radius: 2px;
+      padding: 16px;
+      margin-bottom: 24px;
+
+      .offer-image {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #2A2928;
+
+        .image {
+          width: 42px;
+          height: 42px;
+          background: #7F7D7A;
+          border-radius: 50%;
+          margin-right: 16px;
+          flex: 0 0 42px;
+        }
+      }
+
+      .offer-total {
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .name {
+            color: #B9B8B6;
+          }
+
+
+          .value {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+
+            &.golden {
+              color: #F9E0A8;
+            }
+
+            & > svg {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    .marketplace-fee {
+
+      @media (max-width: 769px) {
+        padding-top: 16px;
+        border-top: 1px dashed #393837;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #CDCCCB;
+        margin-bottom: 18px;
+      }
+    }
+
+    .row {
+      margin-top: 18px;
+      display: grid;
+      grid-auto-rows: 1fr;
+      column-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .select {
+        width: 100%;
+
+        .select-value {
+          width: 100%;
+          background: rgba(46, 46, 46, 0.12);
+        }
+      }
+
+
+    }
+
+    .step-2-wrapper {
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+
+      .step-title {
+        margin-bottom: 18px;
+      }
+
+      .order-details {
+        display: inline-flex;
+        margin: 0 auto 24px;
+
+        .order-image {
+          width: 72px;
+          height: 72px;
+          flex: 0 0 72px;
+
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .details {
+          background: #242424;
+          padding: 12px 14px;
+
+          .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .confirm-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #E1E1E0;
+        max-width: 80%;
+        margin: 0 auto 20px;
+
+        & > b {
+          color: #F9E0A8;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid #393837;
+    padding: 12px 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+
+
+
+    @media (min-width: 768px) {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

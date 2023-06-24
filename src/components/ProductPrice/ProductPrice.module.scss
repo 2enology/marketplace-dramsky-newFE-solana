@@ -1,0 +1,12 @@
+.product-price {
+  display: flex;
+  align-items: center;
+  color: #F9E0A8;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  & > svg {
+    margin-right: 6px;
+  }
+}

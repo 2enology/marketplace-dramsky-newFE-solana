@@ -1,0 +1,98 @@
+@import "styles/common/colors";
+
+.header-wrapper {
+  position: relative;
+  z-index: 12;
+
+  .announcement {
+    background: #1F1F1F;
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > svg {
+      margin-right: 8px;
+    }
+
+
+    & > span {
+      background: $green-linear;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+      padding-left: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+
+  }
+
+  .header {
+    background: #141414;
+    padding: 20px 0;
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+
+      .logo {
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+
+    .header-input-search {
+      width: 100%;
+      max-width: 356px;
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: block;
+      }
+    }
+
+    .right-action {
+      display: none;
+      align-items: center;
+
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+
+      .brands {
+        margin-right: 42px;
+      }
+    }
+
+    .mobile-actions {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .search-button {
+        margin-right: 16px;
+        cursor: pointer;
+      }
+
+      .menu-button {
+        cursor: pointer;
+      }
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+}

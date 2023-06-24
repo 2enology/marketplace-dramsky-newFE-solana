@@ -1,0 +1,97 @@
+.collection-details-wrapper {
+
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  .image-content {
+    flex: 0 0 45%;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+
+    & > img {
+      width: 100%;
+      object-fit: cover;
+      height: 335px;
+
+      @media (min-width: 768px) {
+        height: 503px;
+
+      }
+    }
+  }
+
+  .collection-details {
+    .c-title {
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+        line-height: 64px;
+      }
+    }
+
+    .status-badge {
+      margin-bottom: 24px;
+
+
+      @media (max-width: 769px) {
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 15;
+      }
+    }
+
+
+    .tasting-notes {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+
+      .box {
+        padding: 14px;
+        background: rgba(0, 114, 249, 0.08);
+        border: 1px solid rgba(0, 114, 249, 0.5);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #E1E1E0;
+      }
+    }
+  }
+}
+
+.status-badge {
+  padding: 4px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #2E2E2E;
+  border: 1px solid #76D139;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: #7FC936;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}

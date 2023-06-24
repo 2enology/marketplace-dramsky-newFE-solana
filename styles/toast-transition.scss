@@ -1,0 +1,44 @@
+.fade-enter .fade-comp {
+  opacity: 0;
+  top: 0;
+}
+.fade-enter-active .fade-comp {
+  opacity: 1;
+  top: 20px;
+}
+.fade-exit .fade-comp {
+  opacity: 1;
+  top: 20px
+}
+.fade-exit-active .fade-comp {
+  opacity: 0;
+  top: 50px;
+}
+.fade-enter-active .fade-comp,
+.fade-exit-active .fade-comp {
+  transition: opacity 200ms, top 200ms;
+}
+
+
+
+
+.fade-bottom-enter .fade-comp {
+  opacity: 0;
+  bottom: 50px;
+}
+.fade-bottom-enter-active .fade-comp {
+  opacity: 1;
+  bottom: 90px;
+}
+.fade-bottom-exit .fade-comp {
+  opacity: 1;
+  bottom: 90px
+}
+.fade-bottom-exit-active .fade-comp {
+  opacity: 0;
+  bottom: 50px;
+}
+.fade-bottom-enter-active .fade-comp,
+.fade-bottom-exit-active .fade-comp {
+  transition: opacity 200ms, bottom 200ms;
+}

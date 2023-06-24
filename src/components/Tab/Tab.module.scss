@@ -1,0 +1,42 @@
+.tab-wrapper {
+  display: flex;
+  border-bottom: 1px solid #242424;
+  overflow: auto;
+
+  .tab {
+    padding: 8px 16px;
+    margin-right: 12px;
+    color: #7F7D7A;
+    position: relative;
+    transition: all .2s;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      filter: brightness(120%);
+    }
+
+    &.selected {
+      color: #F9E0A8;
+
+      &::after {
+        background: #F9E0A8;
+      }
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background: transparent;
+      left: 0;
+      transition: background-color .2s;
+    }
+  }
+}

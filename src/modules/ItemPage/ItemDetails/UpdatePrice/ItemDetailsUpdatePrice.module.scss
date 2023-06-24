@@ -1,0 +1,38 @@
+.listing-price {
+  box-shadow: 0px 4px 35px 7px rgba(31, 31, 31, 0.2);
+  border-radius: 2px;
+  background: #242424;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #393837;
+    margin-bottom: 20px;
+  }
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  .input {
+    flex: 1;
+  }
+
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+
+    & > button {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
